@@ -72,7 +72,7 @@
 
     <!-- Top Promo Banner (Soft, Premium, Value-Focused Message) -->
     <div class="bg-brand-900 text-brand-100 text-center py-2.5 px-4 text-xs sm:text-sm font-semibold relative z-20 flex items-center justify-center gap-2">
-        <span class="animate-pulse">🗓️</span>
+        <span class="animate-pulse">🐶</span>
         <span><strong>Subscription-Based Meal Service:</strong> Hand-delivered daily across Mysore. Select your custom plan below!</span>
     </div>
 
@@ -83,14 +83,10 @@
             <a href="#" class="flex items-center gap-3 group">
                 <!-- Circular Logo Container -->
                 <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-500 shadow-md">
-                    <img src="logo.png" alt="Anu's Paw Kitchen Logo" 
-                         id="nav-logo"
-                         class="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-350"
-                         onerror="showLogoFallback(this)">
-                    <!-- Built-in high fidelity SVG/CSS fallback matching the logo -->
-                    <div id="nav-logo-fallback" class="hidden absolute inset-0 bg-gradient-to-br from-brand-800 to-brand-900 flex flex-col items-center justify-center p-1 text-center">
-                        <i class="fa-solid fa-paw text-brand-200 text-xs"></i>
-                        <span class="text-[6px] font-bold text-brand-100 leading-none">Anu's</span>
+                    <!-- High fidelity SVG/CSS fallback matching the logo -->
+                    <div id="nav-logo-fallback" class="absolute inset-0 bg-gradient-to-br from-brand-800 to-brand-900 flex flex-col items-center justify-center p-1 text-center">
+                        <i class="fa-solid fa-paw text-brand-200 text-sm"></i>
+                        <span class="text-[8px] font-bold text-brand-100 leading-none">Anu's</span>
                     </div>
                 </div>
 
@@ -107,20 +103,15 @@
                 <a href="#comparison" class="hover:text-brand-600 transition-colors">See the Difference</a>
                 <a href="#plans" class="hover:text-brand-600 transition-colors">Subscription Plans</a>
                 <a href="#selection-guide" class="hover:text-brand-600 transition-colors">Plan Helper</a>
-                <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+                <a href="#faq" class="hover:text-brand-600 transition-colors">FAQs</a>
             </nav>
 
             <!-- Navigation Plan Scroll Trigger -->
             <div class="flex items-center gap-3">
-                <button onclick="openCallBackModal()" 
-                   class="hidden sm:inline-flex items-center gap-2 border-2 border-brand-500 hover:border-brand-600 text-brand-800 font-bold py-2 px-4 rounded-full transition-all text-sm">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Get a Call Back</span>
-                </button>
                 <a href="#plans" 
                    class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5 text-sm">
                     <i class="fa-solid fa-calendar-check text-base"></i>
-                    <span>Subscribe to a Plan</span>
+                    <span>Inquire About Plans</span>
                 </a>
                 
                 <!-- Mobile Navigation Menu Toggle Button -->
@@ -138,16 +129,11 @@
                 <a href="#comparison" class="block py-2.5 px-3 rounded-lg hover:bg-brand-200 text-brand-900">See the Difference</a>
                 <a href="#plans" class="block py-2.5 px-3 rounded-lg hover:bg-brand-200 text-brand-900">Subscription Plans</a>
                 <a href="#selection-guide" class="block py-2.5 px-3 rounded-lg hover:bg-brand-200 text-brand-900">Plan Helper</a>
-                <a href="#contact" class="block py-2.5 px-3 rounded-lg hover:bg-brand-200 text-brand-900">Contact</a>
-                <button onclick="closeMobileMenu(); openCallBackModal();" 
-                   class="w-full flex items-center justify-center gap-2 border-2 border-brand-500 text-brand-800 font-bold py-2.5 px-4 rounded-full mt-3">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Get a Call Back</span>
-                </button>
+                <a href="#faq" class="block py-2.5 px-3 rounded-lg hover:bg-brand-200 text-brand-900">FAQs</a>
                 <a href="#plans" onclick="closeMobileMenu()" 
-                   class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-full shadow-lg mt-2">
+                   class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-full shadow-lg mt-4">
                     <i class="fa-solid fa-calendar-check text-lg"></i>
-                    <span>Subscribe to a Plan</span>
+                    <span>Inquire About Plans</span>
                 </a>
             </div>
         </div>
@@ -165,8 +151,8 @@
                     Freshly Cooked <span class="text-brand-600 underline decoration-wavy decoration-brand-200/80">Meals</span> For Your Fur Baby
                 </h2>
                 <!-- High-Impact Emotional Copy -->
-                <p class="text-lg sm:text-xl text-stone-600 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                    Transform your fur baby's wellness with our planned monthly nutrition subscription. Lovingly slow-cooked fresh and hand-delivered straight to your doorstep across Mysore.
+                <p class="text-lg sm:text-xl text-stone-600 max-w-xl mx-auto md:mx-0 leading-relaxed font-quicksand">
+                    Transform your fur baby's health with our customized monthly nutrition subscription. Cooked fresh with clean human-grade chicken, nutrient-dense organs, and vegetables, then hand-delivered across Mysore daily.
                 </p>
                 
                 <!-- Action Path -->
@@ -176,23 +162,23 @@
                         <i class="fa-solid fa-utensils"></i>
                         <span>Explore Our Weekly Menu</span>
                     </a>
-                    <a href="#plans"
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-                        <i class="fa-solid fa-calendar-check text-xl"></i>
-                        <span>Subscribe to a Plan</span>
+                    <a href="#plans" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Choose Your Plan</span>
                     </a>
                 </div>
 
                 <!-- Highlight badges aligned with the bottom of the poster -->
                 <div class="pt-6 border-t border-brand-200/50 flex flex-wrap justify-center md:justify-start gap-y-3 gap-x-6 text-brand-800 text-sm font-bold">
                     <span><i class="fa-solid fa-cookie-bite text-brand-600 mr-2"></i>Freshly Cooked Daily</span>
-                    <span><i class="fa-solid fa-leaf text-brand-600 mr-2"></i>Natural Ingredients</span>
-                    <span><i class="fa-solid fa-user-doctor text-brand-600 mr-2"></i>Vet-Approved Nutrition</span>
+                    <span><i class="fa-solid fa-leaf text-brand-600 mr-2"></i>100% Real Whole Foods</span>
+                    <span><i class="fa-solid fa-user-doctor text-brand-600 mr-2"></i>Tailored portion plans</span>
                     <span><i class="fa-solid fa-heart text-rose-600 mr-2"></i>Made with Love</span>
                 </div>
             </div>
 
-            <!-- Hero Right: Emotional Dog Picture -->
+            <!-- Hero Right: Emotional Dog Picture with Custom Responsive Frame -->
             <div class="md:col-span-5 relative flex justify-center">
                 <div class="relative w-80 h-80 sm:w-96 sm:h-96">
                     <!-- Glow backdrops -->
@@ -200,10 +186,11 @@
                     
                     <!-- Beautiful Dog Framing Grid -->
                     <div class="relative w-full h-full bg-white rounded-3xl border-4 border-brand-200 shadow-2xl overflow-hidden p-3 flex flex-col justify-between">
-                        <div class="overflow-hidden rounded-2xl h-full relative">
+                        <div class="overflow-hidden rounded-2xl h-full relative bg-stone-100 flex items-center justify-center">
                             <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800" 
                                  alt="Happy Golden Retriever waiting for wholesome food" 
-                                 class="w-full h-full object-cover transform scale-100 hover:scale-105 transition duration-500">
+                                 class="w-full h-full object-cover transform scale-100 hover:scale-105 transition duration-500"
+                                 onerror="this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800'">
                             <!-- Premium overlay tag -->
                             <span class="absolute top-3 left-3 text-[10px] font-bold text-white uppercase tracking-widest bg-emerald-600/95 px-3 py-1 rounded-full shadow-sm">
                                 🥣 Cooked Fresh Daily
@@ -223,194 +210,190 @@
                     <i class="fa-solid fa-utensils"></i> Fresh Daily Rotation
                 </span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">What's Inside Every Meal?</h2>
-                <p class="text-stone-600 mt-3">Our subscription-based service guarantees a unique, slow-cooked menu for every day of the week to ensure optimal nutritional variety and high enthusiasm!</p>
+                <p class="text-stone-600 mt-3 font-quicksand">Our subscription-based service guarantees a unique, slow-cooked menu for every day of the week to ensure optimal nutritional variety and high enthusiasm!</p>
             </div>
 
             <!-- Horizontal Scrollable Container / Mobile Grid -->
             <div class="flex overflow-x-auto gap-6 pb-6 pt-2 menu-slider snap-x snap-mandatory px-2">
                 
-                <!-- Monday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Monday (Chicken, Rice, Carrot, Peas, Pumpkin) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Monday</span>
                             <span class="text-xl">🥣</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Classic Diced Chicken & Rice Bowl</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Classic Diced Chicken & Rice Bowl</h3>
                         
-                        <!-- Ingredients list -->
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Rice, Carrot, Peas, Pumpkin</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Chicken, White Rice, Sliced Carrot, Fresh Peas, Pumpkin Mash</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">🌀</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-1</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Easy to Digest</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Exceptionally Easy to Digest</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tuesday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Tuesday (Chicken, Sweet Potato, Carrot, Green Beans) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Tuesday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🍠</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Savory Minced Chicken & Sweet Potato</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Savory Minced Chicken & Sweet Potato</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Sweet Potato, Carrot, Green Beans</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Lean Chicken Breast, Sweet Potato, Organic Carrot, Green Beans</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">🍃</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-2</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Rich in Fiber</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Rich in Antioxidants & Fibers</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Wednesday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Wednesday (Chicken, Pumpkin, Zucchini, Carrot) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Wednesday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🥒</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Premium Chicken Tenders & Pumpkin Bowl</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Premium Chicken Tenders & Pumpkin Bowl</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Pumpkin, Zucchini, Carrot</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Chicken Tenders, Steamed Pumpkin, Zucchini Slices, Shredded Carrots</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">🛡️</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-3</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Supports Immunity</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Gastrointestinal and Gut Support</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Thursday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Thursday (Chicken, Oats, Carrot, Peas) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Thursday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🌾</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Rich & Hearty Chicken Feast with Oats</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Rich & Hearty Chicken Feast with Oats</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Oats, Carrot, Peas</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Slow-cooked Chicken, Rolled Oats, Sweet Carrot Cubes, Garden Peas</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">⚡</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-4</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Sustained Energy</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Sustained Carbohydrate Energy</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Friday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Friday (Chicken, Broccoli, Carrot) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Friday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🥦</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Chunky Chicken Bites & Broccoli Bowl</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Chunky Chicken Bites & Broccoli Bowl</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Broccoli, Carrot</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Premium Muscle Chicken, Fresh Broccoli Florets, Red Carrot Shreds</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">👅</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-5</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Supports Digestion</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Cellular Health & Detoxification</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Saturday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Saturday (Chicken, Cabbage, Carrot) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Saturday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🥬</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Slow-Cooked Chicken & Cabbage Medley</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Slow-Cooked Chicken & Cabbage Medley</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Cabbage, Carrot</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Ground Chicken, Tender Chinese Cabbage, Steamed Carrot Cubes</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">💪</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-6</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Supports Muscle Health</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Anti-inflammatory Muscle Support</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sunday -->
-                <div class="min-w-[280px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-6 snap-start flex flex-col justify-between hover:border-brand-500 transition-all">
+                <!-- Sunday (Chicken, Carrot, Pumpkin, Green Beans, Bone Broth) -->
+                <div class="min-w-[285px] sm:min-w-[320px] bg-brand-50 rounded-3xl border-2 border-brand-200 shadow-sm p-5 snap-start flex flex-col justify-between hover:border-brand-500 transition-all group">
                     <div>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex justify-between items-center mb-3">
                             <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">Sunday</span>
-                            <span class="text-xl">🥣</span>
+                            <span class="text-xl">🍖</span>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 leading-snug">Shredded Chicken Golden Stew</h3>
+
+                        <h3 class="text-base font-bold text-brand-900 leading-snug">Shredded Chicken Golden Stew</h3>
                         
-                        <div class="my-4 pt-3 border-t border-brand-200/40">
-                            <span class="text-xs font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
-                            <p class="text-sm text-stone-700 font-medium">Chicken, Carrot, Pumpkin, Green Beans, Bone Broth</p>
+                        <div class="my-3 pt-3 border-t border-brand-200/40">
+                            <span class="text-[10px] font-semibold text-stone-400 block uppercase tracking-wider mb-1">Ingredients:</span>
+                            <p class="text-xs text-stone-700 font-semibold font-quicksand">Shredded Free-range Chicken, Bone Broth Concentrate, Pumpkin pureé, Green Beans</p>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100">
-                        <span class="text-base">💧</span>
+                    <div class="bg-white p-3 rounded-2xl flex items-center gap-2.5 border border-brand-100 mt-2">
+                        <span class="text-base">Gen-7</span>
                         <div>
-                            <span class="text-[10px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
-                            <span class="text-xs font-bold text-stone-600">Hydrating & Nourishing</span>
+                            <span class="text-[9px] font-bold text-brand-800 uppercase tracking-widest block">Primary Benefit</span>
+                            <span class="text-xs font-bold text-stone-600">Ultimate Hydration & Joint Nourishment</span>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Instant Plan Action Banner at the bottom of the Menu section -->
-            <div class="mt-8 bg-brand-100 rounded-3xl p-6 border-2 border-brand-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-brand-900 font-semibold text-sm text-center sm:text-left">
-                    🍲 Lovingly made with fresh chicken. Ready to switch your dog to a planned monthly health schedule?
-                </p>
-                <a href="#plans" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-6 rounded-full shadow-md text-sm transition-transform active:scale-95 shrink-0 text-center">
-                    Subscribe to a Plan
-                </a>
-            </div>
-
-            <!-- Pure Safe Food Banner row taken directly from the bottom of your menu poster -->
+            <!-- Pure Safe Food Banner row -->
             <div class="mt-6 bg-brand-900 text-brand-50 rounded-2xl py-4 px-6 flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-xs sm:text-sm font-bold uppercase tracking-wider border border-brand-700">
                 <span class="flex items-center gap-1.5"><i class="fa-solid fa-ban text-red-500 text-xs"></i> No Salt</span>
                 <span class="text-brand-700 hidden sm:inline">•</span>
@@ -427,227 +410,154 @@
         </div>
     </section>
 
-    <!-- Why Pet Parents Trust Us (Benefits) -->
+    <!-- Why Pet Parents Trust Us -->
     <section class="py-16 bg-white border-b border-brand-200/50" id="benefits">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-brand-600 font-extrabold text-sm uppercase tracking-widest">Premium Care</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Why Pet Parents Trust Us</h2>
-                <p class="text-stone-600 mt-3">Our monthly subscription-based program gives your pet a happier, longer, and healthier life.</p>
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest">Premium Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-1">Why Pet Parents Trust Us</h2>
             </div>
 
+            <!-- Compact flex/grid layout reducing vertical space -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Benefit 1 -->
-                <div class="bg-brand-50 p-6 rounded-2xl border-2 border-transparent hover:border-brand-200 hover:bg-white shadow-sm hover:shadow-md transition-all text-center group">
-                    <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        🐶
+                <div class="bg-brand-50 p-5 rounded-2xl border border-brand-200/60 flex items-start gap-4 shadow-sm hover:scale-105 transition duration-300">
+                    <div class="text-3xl shrink-0 bg-brand-100 p-2.5 rounded-xl">🐶</div>
+                    <div>
+                        <h3 class="text-base font-bold text-brand-950">Better Digestion</h3>
+                        <p class="text-stone-600 text-xs mt-1 leading-relaxed font-quicksand">Gently cooked whole proteins reduce bloating & gas discomfort.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-950 mb-2">Better Digestion</h3>
-                    <p class="text-stone-600 text-sm">Gently cooked real proteins are exceptionally easy to digest, reducing bloating and gas discomfort.</p>
                 </div>
 
                 <!-- Benefit 2 -->
-                <div class="bg-brand-50 p-6 rounded-2xl border-2 border-transparent hover:border-brand-200 hover:bg-white shadow-sm hover:shadow-md transition-all text-center group">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        ✨
+                <div class="bg-brand-50 p-5 rounded-2xl border border-brand-200/60 flex items-start gap-4 shadow-sm hover:scale-105 transition duration-300">
+                    <div class="text-3xl shrink-0 bg-amber-100 p-2.5 rounded-xl">✨</div>
+                    <div>
+                        <h3 class="text-base font-bold text-brand-950">Shiny Coat & Skin</h3>
+                        <p class="text-stone-600 text-xs mt-1 leading-relaxed font-quicksand">Essential natural fats eliminate dry itchiness & hair fall.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-950 mb-2">Shiny Coat & Skin</h3>
-                    <p class="text-stone-600 text-sm">Natural, nutrient-rich fats nourish your dog's skin layers, eliminating dry itchiness and hair fall.</p>
                 </div>
 
                 <!-- Benefit 3 -->
-                <div class="bg-brand-50 p-6 rounded-2xl border-2 border-transparent hover:border-brand-200 hover:bg-white shadow-sm hover:shadow-md transition-all text-center group">
-                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        🛡️
+                <div class="bg-brand-50 p-5 rounded-2xl border border-brand-200/60 flex items-start gap-4 shadow-sm hover:scale-105 transition duration-300">
+                    <div class="text-3xl shrink-0 bg-emerald-100 p-2.5 rounded-xl">🛡️</div>
+                    <div>
+                        <h3 class="text-base font-bold text-brand-950">Stronger Immunity</h3>
+                        <p class="text-stone-600 text-xs mt-1 leading-relaxed font-quicksand">Balanced dietary vitamins bolster your puppy's defenses.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-950 mb-2">Stronger Immunity</h3>
-                    <p class="text-stone-600 text-sm">Balanced dietary vitamins, high bio-availability, and clean minerals bolster your puppy's defenses.</p>
                 </div>
 
                 <!-- Benefit 4 -->
-                <div class="bg-brand-50 p-6 rounded-2xl border-2 border-transparent hover:border-brand-200 hover:bg-white shadow-sm hover:shadow-md transition-all text-center group">
-                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto text-3xl mb-4 group-hover:scale-110 transition-transform">
-                        ⚡
+                <div class="bg-brand-50 p-5 rounded-2xl border border-brand-200/60 flex items-start gap-4 shadow-sm hover:scale-105 transition duration-300">
+                    <div class="text-3xl shrink-0 bg-orange-100 p-2.5 rounded-xl">⚡</div>
+                    <div>
+                        <h3 class="text-base font-bold text-brand-950">More Playful Energy</h3>
+                        <p class="text-stone-600 text-xs mt-1 leading-relaxed font-quicksand">Rich proteins and natural carbs keep your fur baby active.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-950 mb-2">More Energy & Play</h3>
-                    <p class="text-stone-600 text-sm">Rich proteins and natural slow-burning carbohydrates keep your fur baby active and happy all day long.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Side By Side Comparison (LEFT AND RIGHT FOR TABLET/DESKTOP VIEWPORTS) -->
-    <section class="py-16 bg-brand-50" id="comparison">
+    <!-- Side By Side Comparison -->
+    <section class="py-16 bg-brand-50/50 scroll-mt-20" id="comparison">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="text-center max-w-2xl mx-auto mb-10">
-                <span class="text-brand-600 font-extrabold text-sm uppercase tracking-widest">Side-By-Side Battle</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">See The Difference</h2>
-                <p class="text-stone-600 mt-3">Look at how our custom, wholesome nutrition measures up to standard processed dry diet kibble.</p>
+                <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest">See the Difference</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-1">Is Your Dog on the Right Diet?</h2>
             </div>
 
-            <!-- Elegant Poster Visual Wrapper -->
-            <div class="bg-white rounded-3xl p-4 sm:p-8 border-2 border-brand-200/80 shadow-xl overflow-hidden">
-                <div class="relative group">
-                    <img src="comparison.png" alt="Anu's Paw Kitchen Comparison Infographic" 
-                         id="comparison-img"
-                         class="w-full h-auto rounded-2xl shadow-inner transition duration-350 mx-auto max-w-4xl"
-                         onerror="showComparisonFallback(this)">
+            <!-- Side-by-side cards with happy/sad dog imagery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Normal Diet (Sad Dog) -->
+                <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <!-- Header with Sad Dog photo -->
+                        <div class="flex items-center gap-4 border-b border-stone-100 pb-4 mb-4">
+                            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-stone-200 bg-stone-100">
+                                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&q=80&w=300" 
+                                     alt="Listless, bored dog" 
+                                     class="w-full h-full object-cover"
+                                     onerror="this.src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&q=80&w=300'">
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-extrabold uppercase tracking-widest text-red-600 bg-red-50 px-2 py-0.5 rounded flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-xmark"></i> Processed Kibble Diet
+                                </span>
+                                <h3 class="text-base font-bold text-stone-850">Standard Commercial Food</h3>
+                            </div>
+                        </div>
+
+                        <!-- Compact negative bullets -->
+                        <ul class="space-y-3.5 text-xs text-stone-600 font-quicksand">
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500 shrink-0 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                <span><strong>Poor Digestion:</strong> Highly-processed starches lead to frequent bloating, smelly gas, and digestion load.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500 shrink-0 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                <span><strong>Dull Coat & Dry Skin:</strong> Synthetic chemicals and lack of raw, natural animal fats cause constant scratching and heavy shedding.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-red-500 shrink-0 mt-0.5"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                <span><strong>Low Playful Drive:</strong> Hard-to-absorb feed and preservatives leave your pet tired and heavy.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fresh Diet (Happy Dog) -->
+                <div class="bg-white rounded-2xl border-2 border-brand-500/80 p-6 shadow-md flex flex-col justify-between relative overflow-hidden">
+                    <!-- Subtle ribbon -->
+                    <span class="absolute top-0 right-0 bg-brand-500 text-white text-[9px] font-bold uppercase tracking-wider py-0.5 px-3.5 rounded-bl-xl">Recommended</span>
                     
-                    <!-- HIGH-FIDELITY LEFT & RIGHT SIDE-BY-SIDE FALLBACK VIEWPORT GRID -->
-                    <div id="comparison-img-fallback" class="hidden p-4 sm:p-6 text-center space-y-8">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch text-left font-sans">
-                            
-                            <!-- Normal Diet (Processed/Kibble Based) - LEFT COLUMN -->
-                            <div class="bg-stone-50 p-6 sm:p-8 rounded-2xl border-2 border-stone-200 flex flex-col justify-between">
-                                <div>
-                                    <div class="flex items-center gap-3 bg-stone-850 text-stone-100 py-3 px-5 rounded-xl mb-6 shadow-sm bg-stone-900">
-                                        <i class="fa-solid fa-circle-xmark text-red-400 text-2xl"></i>
-                                        <div>
-                                            <h4 class="text-sm font-bold uppercase tracking-wider text-stone-300">Normal Diet</h4>
-                                            <p class="text-xs text-stone-400 font-medium">Processed / Kibble Based</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Points from left side of image -->
-                                    <div class="space-y-4">
-                                        <div class="flex gap-3">
-                                            <span class="text-stone-500 text-xl font-bold shrink-0 mt-0.5">🥣</span>
-                                            <div>
-                                                <strong class="text-stone-800 text-sm block font-fredoka">Poor Digestion</strong>
-                                                <span class="text-xs text-stone-500 block">May cause bloating, gas, and upset stomach.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-stone-500 text-xl font-bold shrink-0 mt-0.5">✂️</span>
-                                            <div>
-                                                <strong class="text-stone-800 text-sm block font-fredoka">Dull Coat & Hair Fall</strong>
-                                                <span class="text-xs text-stone-500 block">Lack of natural nutrients leads to weak, dull fur.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-stone-500 text-xl font-bold shrink-0 mt-0.5">🛡️</span>
-                                            <div>
-                                                <strong class="text-stone-800 text-sm block font-fredoka">Low Immunity</strong>
-                                                <span class="text-xs text-stone-500 block">Processed foods miss essential vitamins and minerals.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-stone-500 text-xl font-bold shrink-0 mt-0.5">🦴</span>
-                                            <div>
-                                                <strong class="text-stone-800 text-sm block font-fredoka">Low Energy</strong>
-                                                <span class="text-xs text-stone-500 block">Causes lethargy and less playful behavior in dogs.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-stone-500 text-xl font-bold shrink-0 mt-0.5">💩</span>
-                                            <div>
-                                                <strong class="text-stone-800 text-sm block font-fredoka">Smelly Poop</strong>
-                                                <span class="text-xs text-stone-500 block">Harder to digest, leads to foul-smelling stools.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-6 pt-4 border-t border-stone-200 text-center">
-                                    <span class="text-3xl">😢</span>
-                                    <p class="text-xs text-stone-400 italic mt-1 font-semibold">Unhappy, dull &amp; lethargic puppy</p>
-                                </div>
+                    <div>
+                        <!-- Header with Happy Dog photo -->
+                        <div class="flex items-center gap-4 border-b border-brand-100 pb-4 mb-4">
+                            <div class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-brand-200 bg-brand-50">
+                                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=300" 
+                                     alt="Vibrant, happy smiling retriever puppy" 
+                                     class="w-full h-full object-cover"
+                                     onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=300'">
                             </div>
-
-                            <!-- Anu's Paw Kitchen (Fresh Wholesome) - RIGHT COLUMN -->
-                            <div class="bg-brand-50 p-6 sm:p-8 rounded-2xl border-2 border-brand-500/80 flex flex-col justify-between shadow-lg">
-                                <div>
-                                    <div class="flex items-center gap-3 bg-brand-900 text-white py-3 px-5 rounded-xl mb-6 shadow-md">
-                                        <i class="fa-solid fa-circle-check text-brand-500 text-2xl"></i>
-                                        <div>
-                                            <h4 class="text-sm font-bold uppercase tracking-wider text-brand-200">Anu's Paw Kitchen</h4>
-                                            <p class="text-xs text-brand-100 font-medium">Fresh, Homemade, Balanced</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Points from right side of image -->
-                                    <div class="space-y-4">
-                                        <div class="flex gap-3">
-                                            <span class="text-brand-600 text-xl font-bold shrink-0 mt-0.5">🍗</span>
-                                            <div>
-                                                <strong class="text-brand-950 text-sm block font-fredoka">Better Digestion</strong>
-                                                <span class="text-xs text-stone-600 block">Easy to digest, reduces bloating and discomfort.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-brand-600 text-xl font-bold shrink-0 mt-0.5">✨</span>
-                                            <div>
-                                                <strong class="text-brand-950 text-sm block font-fredoka">Shiny Coat & Healthy Skin</strong>
-                                                <span class="text-xs text-stone-600 block">Natural ingredients nourish skin and promote a shiny coat.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-brand-600 text-xl font-bold shrink-0 mt-0.5">❤️</span>
-                                            <div>
-                                                <strong class="text-brand-950 text-sm block font-fredoka">Stronger Immunity</strong>
-                                                <span class="text-xs text-stone-600 block">Balanced nutrition boosts overall health and immunity.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-brand-600 text-xl font-bold shrink-0 mt-0.5">⚡</span>
-                                            <div>
-                                                <strong class="text-brand-950 text-sm block font-fredoka">More Energy & Playful</strong>
-                                                <span class="text-xs text-stone-600 block">High-quality protein and nutrients keep them active.</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex gap-3">
-                                            <span class="text-brand-600 text-xl font-bold shrink-0 mt-0.5">💩</span>
-                                            <div>
-                                                <strong class="text-brand-950 text-sm block font-fredoka">Healthy Poop</strong>
-                                                <span class="text-xs text-stone-600 block">Highly digestible food leads to smaller, firmer, less odour.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-6 pt-4 border-t border-brand-200 text-center">
-                                    <span class="text-3xl">🐕</span>
-                                    <p class="text-xs text-brand-700 italic mt-1 font-semibold text-amber-700">Healthy, happy dog with sparkling energy!</p>
-                                </div>
+                            <div>
+                                <span class="text-[10px] font-extrabold uppercase tracking-widest text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check"></i> Anu's Fresh Subscription
+                                </span>
+                                <h3 class="text-base font-bold text-brand-900">Anu's Paw Kitchen</h3>
                             </div>
-
                         </div>
+
+                        <!-- Compact positive bullets -->
+                        <ul class="space-y-3.5 text-xs text-stone-700 font-quicksand">
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 shrink-0 mt-0.5"><i class="fa-solid fa-heart"></i></span>
+                                <span><strong>Excellent Digestion:</strong> Gently-cooked real chicken and organs are bio-available, maximizing nutrient uptake.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 shrink-0 mt-0.5"><i class="fa-solid fa-heart"></i></span>
+                                <span><strong>Thick & Shiny Coat:</strong> Pure natural essential fats eliminate flaky dry skin, reducing shedding within 3 weeks.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-emerald-600 shrink-0 mt-0.5"><i class="fa-solid fa-heart"></i></span>
+                                <span><strong>Sustained Vitality:</strong> Whole food proteins raise hydration and keep your companion in optimal weight.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Footer style banner layout adapted from the bottom of your first uploaded comparison image with Subscribe CTA -->
-                <div class="mt-8 pt-8 border-t border-brand-100 flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center flex-1 w-full">
-                        <div class="p-3 bg-brand-50 rounded-xl border border-brand-100">
-                            <i class="fa-solid fa-fire-burner text-brand-600 text-lg mb-1 block"></i>
-                            <span class="text-xs font-bold text-brand-900 block uppercase">Freshly Cooked Daily</span>
-                        </div>
-                        <div class="p-3 bg-brand-50 rounded-xl border border-brand-100">
-                            <i class="fa-solid fa-leaf text-brand-600 text-lg mb-1 block"></i>
-                            <span class="text-xs font-bold text-brand-900 block uppercase">Natural Ingredients</span>
-                        </div>
-                        <div class="p-3 bg-brand-50 rounded-xl border border-brand-100">
-                            <i class="fa-solid fa-square-plus text-brand-600 text-lg mb-1 block"></i>
-                            <span class="text-xs font-bold text-brand-900 block uppercase">Vet-Approved Nutrition</span>
-                        </div>
-                        <div class="p-3 bg-brand-50 rounded-xl border border-brand-100">
-                            <i class="fa-solid fa-heart text-brand-600 text-lg mb-1 block"></i>
-                            <span class="text-xs font-bold text-brand-900 block uppercase">Made with Love</span>
-                        </div>
-                    </div>
-                    <a href="#plans" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform active:scale-95 shrink-0 text-sm w-full md:w-auto text-center">
-                        Subscribe to a Plan
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Subscription Plans Section (HORIZONTAL SCROLL INTERACTIVE SLIDER) -->
-    <section class="py-16 bg-white scroll-mt-20" id="plans">
+    <!-- Subscription Plans Section -->
+    <section class="py-16 bg-white scroll-mt-20 border-b border-brand-200/50" id="plans">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-brand-600 font-extrabold text-sm uppercase tracking-widest">Our Offers</span>
                 <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Monthly Subscription Plans</h2>
-                <p class="text-stone-600 mt-3">Choose a planned feeding schedule that best meets your dog's long-term health. Fresh ingredients cooked daily & hand-delivered directly to Mysore homes!</p>
+                <p class="text-stone-600 mt-3 font-quicksand">Choose a planned feeding schedule that best meets your dog's size. Fresh meals are lovingly slow-cooked daily and hand-delivered directly to Mysore homes!</p>
             </div>
 
             <!-- Horizontal Scroll Slider for subscription plans -->
@@ -660,7 +570,7 @@
                             <span class="text-2xl">🥣</span>
                             <h3 class="text-xl font-bold text-brand-900">1 Meal A Day</h3>
                         </div>
-                        <p class="text-stone-500 text-sm">Perfect for light eaters, smaller toy breeds, or as a healthy fresh mixer with current food.</p>
+                        <p class="text-stone-500 text-sm font-quicksand">Perfect for light eaters, smaller toy breeds, or as an extremely healthy fresh food mixer with current meals.</p>
                         
                         <div class="my-6 border-y border-brand-200/50 py-4 flex flex-col">
                             <div>
@@ -673,7 +583,7 @@
                             </span>
                         </div>
 
-                        <ul class="space-y-3 text-stone-700 mb-8 text-sm">
+                        <ul class="space-y-3 text-stone-700 mb-8 text-sm font-quicksand">
                             <li class="flex items-center gap-2.5">
                                 <i class="fa-solid fa-check text-brand-500 font-bold"></i>
                                 <span>1 Fresh meal daily delivery (30/mo)</span>
@@ -690,9 +600,9 @@
                     </div>
                     
                     <button onclick="openPlanModal('1 Meal A Day')" 
-                            class="w-full inline-flex items-center justify-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl shadow transition-all transform active:scale-95">
-                        <i class="fa-solid fa-file-signature text-base"></i>
-                        <span>Subscribe Monthly</span>
+                            class="w-full inline-flex items-center justify-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl shadow transition-all transform active:scale-95 text-sm">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>Select & Discuss on WhatsApp</span>
                     </button>
                 </div>
 
@@ -705,11 +615,11 @@
                         <div class="flex items-center justify-between mb-2">
                             <div class="flex items-center gap-2">
                                 <span class="text-2xl">🥣🥣</span>
-                                <h3 class="text-xl font-bold text-brand-900 font-fredoka">2 Meals A Day</h3>
+                                <h3 class="text-xl font-bold text-brand-900">2 Meals A Day</h3>
                             </div>
                             <span class="bg-brand-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Popular</span>
                         </div>
-                        <p class="text-stone-600 text-sm">The gold standard. Ideal for moderate-to-highly active dogs as their sole, complete source of daily food.</p>
+                        <p class="text-stone-600 text-sm font-quicksand">The gold standard. Ideal for moderate-to-highly active dogs as their sole, complete source of clean daily nutrition.</p>
                         
                         <div class="my-6 border-y border-brand-200 py-4 flex flex-col">
                             <div>
@@ -722,7 +632,7 @@
                             </span>
                         </div>
 
-                        <ul class="space-y-3 text-stone-700 mb-8 text-sm">
+                        <ul class="space-y-3 text-stone-700 mb-8 text-sm font-quicksand">
                             <li class="flex items-center gap-2.5 font-semibold">
                                 <i class="fa-solid fa-check text-brand-600 font-bold"></i>
                                 <span>2 Fresh meals daily deliveries (60/mo)</span>
@@ -733,15 +643,15 @@
                             </li>
                             <li class="flex items-center gap-2.5">
                                 <i class="fa-solid fa-check text-brand-600 font-bold"></i>
-                                <span>Most loved by active Retrievers & Pugs</span>
+                                <span>Most loved by active Beagles & Indies</span>
                             </li>
                         </ul>
                     </div>
                     
                     <button onclick="openPlanModal('2 Meals A Day')" 
-                            class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg transition-all transform active:scale-95">
-                        <i class="fa-solid fa-file-signature text-lg"></i>
-                        <span>Subscribe Monthly</span>
+                            class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg transition-all transform active:scale-95 text-sm">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>Select & Discuss on WhatsApp</span>
                     </button>
                 </div>
 
@@ -752,7 +662,7 @@
                             <span class="text-2xl">🥣🥣🥣</span>
                             <h3 class="text-xl font-bold text-brand-900">3 Meals A Day</h3>
                         </div>
-                        <p class="text-stone-500 text-sm">Best suited for fast-growing puppies, pregnant dogs, or massive energetic working breeds.</p>
+                        <p class="text-stone-500 text-sm font-quicksand">Best suited for fast-growing puppies, pregnant dogs, or massive energetic working breeds with larger appetites.</p>
                         
                         <div class="my-6 border-y border-brand-200/50 py-4 flex flex-col">
                             <div>
@@ -765,7 +675,7 @@
                             </span>
                         </div>
 
-                        <ul class="space-y-3 text-stone-700 mb-8 text-sm">
+                        <ul class="space-y-3 text-stone-700 mb-8 text-sm font-quicksand">
                             <li class="flex items-center gap-2.5">
                                 <i class="fa-solid fa-check text-brand-500 font-bold"></i>
                                 <span>3 Fresh meals daily deliveries (90/mo)</span>
@@ -782,37 +692,35 @@
                     </div>
                     
                     <button onclick="openPlanModal('3 Meals A Day')" 
-                            class="w-full inline-flex items-center justify-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl shadow transition-all transform active:scale-95">
-                        <i class="fa-solid fa-file-signature text-base"></i>
-                        <span>Subscribe Monthly</span>
+                            class="w-full inline-flex items-center justify-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl shadow transition-all transform active:scale-95 text-sm">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>Select & Discuss on WhatsApp</span>
                     </button>
                 </div>
             </div>
 
-            <!-- Policy / Convenience badges directly from the footer of your new poster -->
-            <div class="bg-brand-50 rounded-2xl p-5 border border-brand-200 flex flex-wrap justify-around items-center gap-4 text-center text-sm font-bold text-brand-800 shadow-sm">
-                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-pause text-brand-600 text-lg"></i> Flexible Pause Anytime</span>
+            <!-- Policy / Convenience badges -->
+            <div class="bg-brand-50 rounded-xl py-3 px-4 border border-brand-200/80 flex flex-col sm:flex-row justify-around items-center gap-y-2 gap-x-4 text-center text-xs font-bold text-brand-800 shadow-sm">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-pause text-brand-600"></i> Flexible Pause Anytime</span>
                 <span class="text-brand-300 hidden md:inline">|</span>
-                <span class="flex items-center gap-2"><i class="fa-solid fa-arrows-rotate text-brand-600 text-lg"></i> Cancel Anytime • No Hassle</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-arrows-rotate text-brand-600"></i> Cancel Anytime • No Hassle</span>
                 <span class="text-brand-300 hidden md:inline">|</span>
-                <span class="flex items-center gap-2">
-                    <i class="fa-solid fa-truck-fast text-brand-600 text-lg"></i>
-                    <span class="text-left leading-tight">
-                        <span class="block">Free Delivery (up to 4km)*</span>
-                        <span class="block text-[10px] text-stone-500 font-semibold normal-case">*Charges may apply post 4km</span>
-                    </span>
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-truck-fast text-brand-600"></i>
+                    <span>Free Delivery (up to 4km)*</span>
+                    <span class="text-[10px] text-stone-500 font-medium normal-case">(*Charges apply post 4km)</span>
                 </span>
             </div>
         </div>
     </section>
 
     <!-- Confused to choose which plan is best? Section -->
-    <section class="py-16 bg-brand-50 border-t border-brand-200/60" id="selection-guide">
+    <section class="py-16 bg-brand-50 scroll-mt-20 border-b border-brand-200/60" id="selection-guide">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-brand-600 font-extrabold text-sm uppercase tracking-widest">Plan Helper</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Confused to choose which plan is best?</h2>
-                <p class="text-stone-600 mt-3">Don't worry! Every dog has different appetite and energy levels. Use our simple guide below to find the absolute best match for your companion.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Confused about which plan is best?</h2>
+                <p class="text-stone-600 mt-3 font-quicksand">Don't worry! Every dog has different appetite and energy levels. Use our guide below to select the finest fit for your pet.</p>
             </div>
 
             <!-- Helpful Guide Grid -->
@@ -823,22 +731,19 @@
                         <div class="bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block mb-4">
                             Ideal for Toy Breeds & Mixers
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 mb-2 font-fredoka">1 Time a Day</h3>
-                        <p class="text-sm text-stone-500 mb-4 font-semibold">Perfect for adult dogs with a light appetite.</p>
-                        <ul class="space-y-3 text-stone-600 text-xs">
+                        <h3 class="text-lg font-bold text-brand-900 mb-2">1 Time a Day</h3>
+                        <p class="text-sm text-stone-500 mb-4 font-semibold font-quicksand">Perfect for smaller adult dogs with moderate appetites.</p>
+                        <ul class="space-y-3 text-stone-600 text-xs font-quicksand">
                             <li class="flex items-start gap-2">
                                 <span class="text-brand-600 mt-0.5">🐾</span>
                                 <span><strong>Small Toy Breeds:</strong> Pomeranians, Shih Tzus, Pugs, or Maltese under 8 kg.</span>
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="text-brand-600 mt-0.5">🐾</span>
-                                <span><strong>Diet Mixer:</strong> You want to mix our fresh food with existing dry food.</span>
+                                <span><strong>Diet Mixer:</strong> Mixes exceptionally well with current food for optimal nutrient diversification.</span>
                             </li>
                         </ul>
                     </div>
-                    <a href="#plans" class="mt-6 w-full py-2.5 bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs rounded-xl shadow transition-all block text-center">
-                        Subscribe to 1 Meal Plan
-                    </a>
                 </div>
 
                 <!-- Guide for 2 Meals a day -->
@@ -850,9 +755,9 @@
                         <div class="bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block mb-4">
                             Ideal for Complete Active Diets
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 mb-2 font-fredoka">2 Times a Day</h3>
-                        <p class="text-sm text-stone-500 mb-4 font-semibold">Perfect for active dogs & growing pups.</p>
-                        <ul class="space-y-3 text-stone-600 text-xs">
+                        <h3 class="text-lg font-bold text-brand-900 mb-2">2 Times a Day</h3>
+                        <p class="text-sm text-stone-500 mb-4 font-semibold font-quicksand">Perfect for active dogs & growing companion pups.</p>
+                        <ul class="space-y-3 text-stone-600 text-xs font-quicksand">
                             <li class="flex items-start gap-2">
                                 <span class="text-brand-600 mt-0.5">🐾</span>
                                 <span><strong>Standard Breeds:</strong> Labradors, Golden Retrievers, Beagles, and active Indies.</span>
@@ -863,9 +768,6 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#plans" class="mt-6 w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow transition-all block text-center">
-                        Subscribe to 2 Meals Plan
-                    </a>
                 </div>
 
                 <!-- Guide for 3 Meals a day -->
@@ -874,9 +776,9 @@
                         <div class="bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block mb-4">
                             Ideal for High Energy & Growth
                         </div>
-                        <h3 class="text-lg font-bold text-brand-900 mb-2 font-fredoka">3 Times a Day</h3>
-                        <p class="text-sm text-stone-500 mb-4 font-semibold">Best for high energy dogs, large breeds & nursing pups.</p>
-                        <ul class="space-y-3 text-stone-600 text-xs">
+                        <h3 class="text-lg font-bold text-brand-900 mb-2">3 Times a Day</h3>
+                        <p class="text-sm text-stone-500 mb-4 font-semibold font-quicksand">Best for massive energetic working breeds or puppies.</p>
+                        <ul class="space-y-3 text-stone-600 text-xs font-quicksand">
                             <li class="flex items-start gap-2">
                                 <span class="text-brand-600 mt-0.5">🐾</span>
                                 <span><strong>Growing Puppies:</strong> Younger puppies needing frequent portion intervals.</span>
@@ -887,9 +789,6 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#plans" class="mt-6 w-full py-2.5 bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs rounded-xl shadow transition-all block text-center">
-                        Subscribe to 3 Meals Plan
-                    </a>
                 </div>
             </div>
 
@@ -898,7 +797,7 @@
                 <div class="space-y-3 max-w-xl text-center lg:text-left">
                     <span class="text-brand-500 font-extrabold text-sm uppercase tracking-widest block">📞 Call Back Request</span>
                     <h3 class="text-2xl font-bold text-stone-50">Prefer discussing this over a quick call?</h3>
-                    <p class="text-sm text-stone-300">Leave your details and we will call you back shortly to help clear your doubts, customize menus, and select the finest plan for your pet!</p>
+                    <p class="text-sm text-stone-300 font-quicksand">Leave your details and we will call you back shortly to help clear your doubts, customize menus, and select the finest plan for your pet!</p>
                 </div>
                 <div class="w-full lg:w-auto shrink-0 flex flex-col sm:flex-row gap-3">
                     <button onclick="openCallBackModal()" 
@@ -916,70 +815,57 @@
         </div>
     </section>
 
-    <!-- Contact & Direct Chat Callout -->
-    <section class="py-16 bg-white border-t border-brand-100" id="contact">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="bg-brand-900 text-brand-50 rounded-3xl overflow-hidden shadow-2xl relative">
-                <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand-500 rounded-full opacity-10 blur-2xl"></div>
-                <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-emerald-500 rounded-full opacity-10 blur-2xl"></div>
+    <!-- INTERACTIVE ACCORDION FAQS (Kept at Last) -->
+    <section class="py-16 bg-white border-t border-brand-200/60 scroll-mt-20" id="faq">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-brand-600 font-extrabold text-sm uppercase tracking-widest">Got Questions?</span>
+                <h2 class="text-3xl font-bold text-brand-900 mt-1">Frequently Asked Concerns</h2>
+            </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <!-- Column 1: Copy -->
-                    <div class="p-8 sm:p-12 space-y-6">
-                        <span class="text-brand-500 font-extrabold text-sm uppercase tracking-wider">Reach out</span>
-                        <h2 class="text-3xl sm:text-4xl font-bold text-white">Let's Discuss Your Pup's Health</h2>
-                        <p class="text-stone-300">
-                            Skip the forms! Talk directly to Anu, our head dog chef, about customized monthly meals, protein options, or custom schedules.
-                        </p>
-
-                        <div class="space-y-4 pt-4 text-sm sm:text-base">
-                            <div class="flex items-center gap-4">
-                                <div class="bg-brand-800 text-brand-100 w-12 h-12 rounded-xl flex items-center justify-center border border-brand-700">
-                                    <i class="fa-solid fa-location-dot text-lg"></i>
-                                </div>
-                                <div>
-                                    <span class="text-xs text-stone-400 block font-semibold uppercase">Location</span>
-                                    <span class="font-bold text-stone-100">Mysore, Karnataka, India</span>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center gap-4">
-                                <div class="bg-emerald-800 text-emerald-100 w-12 h-12 rounded-xl flex items-center justify-center">
-                                    <i class="fa-solid fa-phone text-lg"></i>
-                                </div>
-                                <div>
-                                    <span class="text-xs text-stone-400 block font-semibold uppercase">Phone / WhatsApp</span>
-                                    <span class="font-bold text-stone-100">+91 9880134847</span>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Accordion List -->
+            <div class="space-y-3">
+                <!-- Q1 -->
+                <div class="bg-brand-50 rounded-2xl border-2 border-brand-200 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-brand-900 flex justify-between items-center focus:outline-none">
+                        <span>How is the food packaged and delivered?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-1" class="px-5 pb-5 text-xs sm:text-sm text-stone-600 hidden font-quicksand leading-relaxed">
+                        We package our meals warm in eco-friendly food-grade leakproof boxes. Hand-delivery riders depart early each day to bring them right to your doorstep across Mysore.
                     </div>
+                </div>
 
-                    <!-- Column 2: Big Chat Prompt Card -->
-                    <div class="bg-brand-950 p-8 sm:p-12 flex flex-col justify-center border-t md:border-t-0 md:border-l border-brand-800/60">
-                        <h3 class="text-xl font-bold mb-4 text-brand-500 flex items-center gap-2">
-                            <span>💬 Swift WhatsApp Chat</span>
-                        </h3>
-                        <p class="text-stone-400 text-sm mb-6">
-                            Start a direct dialogue now. Send us details of your dog's current feeding pattern, and we'll advise the perfect monthly portion program!
-                        </p>
+                <!-- Q2 -->
+                <div class="bg-brand-50 rounded-2xl border-2 border-brand-200 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-brand-900 flex justify-between items-center focus:outline-none">
+                        <span>Can I customize the recipe if my dog has allergies?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-2" class="px-5 pb-5 text-xs sm:text-sm text-stone-600 hidden font-quicksand leading-relaxed">
+                        Yes! Absolutely. When you submit your WhatsApp inquiry, mention any specific allergies (like grains or eggs). We can customize the recipe (e.g., grain-free, potato-free) to keep your dog comfortable.
+                    </div>
+                </div>
 
-                        <div class="flex flex-col sm:flex-row gap-3 w-full">
-                            <button onclick="openPlanModal('General Subscription')"
-                                    class="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg py-4 px-6 rounded-full shadow-lg transition-transform hover:-translate-y-1 flex-1">
-                                <i class="fa-brands fa-whatsapp text-2xl"></i>
-                                <span>Chat on WhatsApp</span>
-                            </button>
-                            <button onclick="openCallBackModal()"
-                                    class="inline-flex items-center justify-center gap-3 bg-white text-brand-900 font-bold text-lg py-4 px-6 rounded-full shadow-lg transition-transform hover:-translate-y-1 flex-1 border-2 border-brand-200">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>Request Call Back</span>
-                            </button>
-                        </div>
-                        
-                        <div class="mt-6 text-center text-xs text-stone-500">
-                            🕒 Quick response (usually within 15 minutes)
-                        </div>
+                <!-- Q3 -->
+                <div class="bg-brand-50 rounded-2xl border-2 border-brand-200 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-brand-900 flex justify-between items-center focus:outline-none">
+                        <span>Do you offer a trial period before committing?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-3" class="px-5 pb-5 text-xs sm:text-sm text-stone-600 hidden font-quicksand leading-relaxed">
+                        Yes! You can request a 3-day or 7-day trial run through WhatsApp to see how much your companion enjoys the recipes before signing up for the complete monthly program.
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-brand-50 rounded-2xl border-2 border-brand-200 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-brand-900 flex justify-between items-center focus:outline-none">
+                        <span>How do I pause or cancel my plan?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-ans-4" class="px-5 pb-5 text-xs sm:text-sm text-stone-600 hidden font-quicksand leading-relaxed">
+                        Simply drop a line on WhatsApp 24 hours in advance if you're traveling out of Mysore or wish to pause. We will adjust the billing calendar, and there are absolutely no fees for cancellations or pauses!
                     </div>
                 </div>
             </div>
@@ -987,18 +873,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-brand-900 border-t border-brand-800/80 py-12 relative z-10">
+    <footer class="bg-brand-900 border-t border-brand-800/80 py-12 relative z-10" id="footer">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-brand-800">
                 <div class="flex items-center gap-3">
-                    <div class="relative w-10 h-10 rounded-full overflow-hidden border border-brand-500">
-                        <img src="logo.png" alt="Anu's Paw Kitchen Logo" 
-                             id="footer-logo"
-                             class="w-full h-full object-cover"
-                             onerror="this.style.display='none'">
+                    <div class="relative w-10 h-10 rounded-full overflow-hidden border border-brand-500 bg-brand-800 flex items-center justify-center">
+                        <i class="fa-solid fa-paw text-brand-200 text-lg"></i>
                     </div>
                     <div>
-                        <span class="text-xl font-bold text-white font-fredoka block leading-none mb-1">Anu's Paw Kitchen</span>
+                        <span class="text-xl font-bold text-white block leading-none mb-1">Anu's Paw Kitchen</span>
                         <span class="text-[10px] text-brand-200">presented by Anu's chicken shop ♥</span>
                     </div>
                 </div>
@@ -1009,7 +892,18 @@
                     <a href="#comparison" class="hover:text-brand-500 transition-colors">Comparison</a>
                     <a href="#plans" class="hover:text-brand-500 transition-colors">Plans</a>
                     <a href="#selection-guide" class="hover:text-brand-500 transition-colors">Plan Helper</a>
-                    <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+                    <a href="#faq" class="hover:text-brand-500 transition-colors">FAQs</a>
+                </div>
+            </div>
+
+            <!-- Company contact details inside footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center py-6 border-b border-brand-850 gap-4 text-stone-300 text-sm">
+                <p>📍 Mysore, Karnataka, India</p>
+                <p>📞 +91 9880134847</p>
+                <div class="flex gap-3">
+                    <button onclick="openCallBackModal()" class="text-brand-500 hover:text-brand-600 font-bold transition-colors">Request Call Back</button>
+                    <span>•</span>
+                    <button onclick="openPlanModal('General Subscription')" class="text-emerald-500 hover:text-emerald-600 font-bold transition-colors">Chat on WhatsApp</button>
                 </div>
             </div>
 
@@ -1026,10 +920,10 @@
             <!-- Modal Header -->
             <div class="bg-brand-900 p-5 text-white flex items-center justify-between relative">
                 <div>
-                    <span id="selected-plan-subtitle" class="text-xs font-bold text-brand-500 uppercase tracking-widest block font-fredoka">Start Monthly Subscription</span>
+                    <span id="selected-plan-subtitle" class="text-xs font-bold text-brand-500 uppercase tracking-widest block font-fredoka">Start Fresh Plan</span>
                     <h3 class="text-lg sm:text-xl font-bold flex items-center gap-2">
                         <span>🐾 Selection: </span>
-                        <span id="selected-plan-title" class="text-amber-400 font-fredoka">1 Meal A Day</span>
+                        <span id="selected-plan-title" class="text-amber-400">1 Meal A Day</span>
                     </h3>
                 </div>
                 <button onclick="closePlanModal()" class="w-8 h-8 rounded-full bg-brand-800 text-brand-200 hover:text-white flex items-center justify-center transition-colors">
@@ -1040,12 +934,12 @@
             <!-- Scrollable Form Body -->
             <form id="details-form" onsubmit="handleFormSubmit(event)" class="p-6 overflow-y-auto max-h-[70vh] space-y-5">
                 
-                <!-- Dynamic Notice Badge (LOADED DYNAMICALLY VIA JS BASED ON SELECTION) -->
-                <div id="modal-dynamic-note" class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-brand-900 font-medium">
+                <!-- Dynamic Notice Badge -->
+                <div id="modal-dynamic-note" class="bg-brand-50 border border-brand-200 text-stone-800 rounded-xl p-3 text-xs font-semibold">
                     <!-- Text inserted dynamically by JS -->
                 </div>
 
-                <!-- Consolidated Form with Zero Friction -->
+                <!-- Consolidated Form -->
                 <div class="space-y-4">
                     <div>
                         <label class="block text-xs font-bold text-stone-600 mb-1">Your Name *</label>
@@ -1098,7 +992,7 @@
                 <button type="submit" id="modal-submit-btn"
                         class="w-full inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-2xl shadow-lg transition-transform transform active:scale-95 text-base mt-2">
                     <i class="fa-brands fa-whatsapp text-xl"></i>
-                    <span id="modal-btn-text">Confirm & Subscribe on WhatsApp</span>
+                    <span id="modal-btn-text">Send Free Inquiry via WhatsApp</span>
                 </button>
             </form>
         </div>
@@ -1122,7 +1016,7 @@
 
             <!-- Call Back Form -->
             <form onsubmit="handleCallBackSubmit(event)" class="p-6 space-y-4">
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-brand-950 font-medium">
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-brand-950 font-semibold">
                     📍 Leave your phone number and we'll call you back shortly to help find the best plan for your dog.
                 </div>
 
@@ -1152,74 +1046,61 @@
         </div>
     </div>
 
-    <!-- Interactive script for Menu, Fallbacks, Mobile Menu Drawer & Subscription Modal logic -->
+    <!-- Interactive scripts -->
     <script>
-        // ==========================================
-        // ⚙️ PLAN PRICES CONFIGURATION (EASY TO CHANGE)
-        // ==========================================
-        // Set values matching your spectacular new price lists
+        // Pricing structure variables
         const PLAN_PRICES = {
-            // "We Love Dogs Too" prices
-            plan_1: 4499,  // Price for 1 Meal A Day (Original was 5599)
-            plan_2: 5599,  // Price for 2 Meals A Day (Original was 6699)
-            plan_3: 6699,  // Price for 3 Meals A Day (Original was 7799)
-            
-            // Original reference prices
+            plan_1: 4499,
+            plan_2: 5599,
+            plan_3: 6699,
             orig_1: 5599,
             orig_2: 6699,
             orig_3: 7799
         };
 
-        // Initialize and calculate dynamic values on load
+        // Load dynamic properties
         window.addEventListener('DOMContentLoaded', () => {
             updateDynamicPrices();
         });
 
         function updateDynamicPrices() {
-            // Plan 1: 1 Meal a day = 30 meals per month
+            // Plan 1
             const p1 = PLAN_PRICES.plan_1;
-            const orig1 = PLAN_PRICES.orig_1;
             const costPerMeal1 = Math.round(p1 / 30);
-            document.getElementById('original-price-1').textContent = `₹${orig1.toLocaleString('en-IN')}`;
+            document.getElementById('original-price-1').textContent = `₹${PLAN_PRICES.orig_1.toLocaleString('en-IN')}`;
             document.getElementById('display-price-1').textContent = `₹${p1.toLocaleString('en-IN')}`;
             document.getElementById('meal-price-1').textContent = `Only ~₹${costPerMeal1} per meal`;
 
-            // Plan 2: 2 Meals a day = 60 meals per month
+            // Plan 2
             const p2 = PLAN_PRICES.plan_2;
-            const orig2 = PLAN_PRICES.orig_2;
             const costPerMeal2 = Math.round(p2 / 60);
-            document.getElementById('original-price-2').textContent = `₹${orig2.toLocaleString('en-IN')}`;
+            document.getElementById('original-price-2').textContent = `₹${PLAN_PRICES.orig_2.toLocaleString('en-IN')}`;
             document.getElementById('display-price-2').textContent = `₹${p2.toLocaleString('en-IN')}`;
             document.getElementById('meal-price-2').textContent = `Only ~₹${costPerMeal2} per meal`;
 
-            // Plan 3: 3 Meals a day = 90 meals per month
+            // Plan 3
             const p3 = PLAN_PRICES.plan_3;
-            const orig3 = PLAN_PRICES.orig_3;
             const costPerMeal3 = Math.round(p3 / 90);
-            document.getElementById('original-price-3').textContent = `₹${orig3.toLocaleString('en-IN')}`;
+            document.getElementById('original-price-3').textContent = `₹${PLAN_PRICES.orig_3.toLocaleString('en-IN')}`;
             document.getElementById('display-price-3').textContent = `₹${p3.toLocaleString('en-IN')}`;
             document.getElementById('meal-price-3').textContent = `Only ~₹${costPerMeal3} per meal`;
         }
 
-        // Track the current subscription package plan trigger
-        let currentSelectedPlan = 'General Subscription';
+        // --- FAQ Accordion logic ---
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
 
-        function showLogoFallback(imgElement) {
-            imgElement.style.display = 'none';
-            document.getElementById('nav-logo-fallback').classList.remove('hidden');
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                ans.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
         }
 
-        function showHeroLogoFallback(imgElement) {
-            imgElement.style.display = 'none';
-            document.getElementById('hero-logo-fallback').classList.remove('hidden');
-        }
-
-        function showComparisonFallback(imgElement) {
-            imgElement.style.display = 'none';
-            document.getElementById('comparison-img-fallback').classList.remove('hidden');
-        }
-
-        // Responsive Mobile Menu Toggle
+        // Responsive Mobile Menu
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -1227,7 +1108,6 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile drawer helper function
         function closeMobileMenu() {
             mobileMenu.classList.add('hidden');
         }
@@ -1240,7 +1120,9 @@
             });
         });
 
-        // Modal triggers with fully contextual, dynamic notes & actions
+        // Track the current subscription package plan trigger
+        let currentSelectedPlan = 'General Subscription';
+
         function openPlanModal(planName) {
             currentSelectedPlan = planName;
             
@@ -1250,45 +1132,32 @@
             const btnTextEl = document.getElementById('modal-btn-text');
 
             titleEl.textContent = planName;
-            
-            // Clear prior validation errors
             document.getElementById('modal-validation-warning').classList.add('hidden');
 
-            // Render matching context dynamically to keep the form relatable
-            if (planName.includes('Counseling') || planName.includes('Choose') || planName.includes('Helper')) {
-                subtitleEl.textContent = "Request Free Counseling";
-                noteEl.innerHTML = "📍 <strong>Note:</strong> Anu will contact you directly on WhatsApp to learn about your dog's preferences and guide you on the ideal meal program. <em>Free delivery within 4km (charges may apply post 4km).</em>";
-                btnTextEl.textContent = "Request Plan Consultation";
-            } else if (planName.includes('General')) {
-                subtitleEl.textContent = "Start Monthly Subscription";
-                noteEl.innerHTML = "📍 <strong>Note:</strong> Tell us about your dog to request custom monthly program info. Meals are made fresh daily & delivered every morning. <em>Free delivery within 4km (charges may apply post 4km).</em>";
-                btnTextEl.textContent = "Inquire About Subscription";
+            if (planName.includes('Counseling')) {
+                subtitleEl.textContent = "Plan Consultation";
+                noteEl.innerHTML = "Anu will message you directly on WhatsApp to learn about your companion and design a trial bowl.";
             } else {
-                subtitleEl.textContent = "Subscribe to Monthly Plan";
+                subtitleEl.textContent = "Fresh Plan Inquiry";
+                let price = '';
+                if (planName.includes('1 Meal')) price = `₹${PLAN_PRICES.plan_1.toLocaleString('en-IN')}`;
+                if (planName.includes('2 Meals')) price = `₹${PLAN_PRICES.plan_2.toLocaleString('en-IN')}`;
+                if (planName.includes('3 Meals')) price = `₹${PLAN_PRICES.plan_3.toLocaleString('en-IN')}`;
                 
-                // Get corresponding price dynamically for the modal note
-                let monthlyPrice = '';
-                if (planName.includes('1 Meal')) monthlyPrice = `₹${PLAN_PRICES.plan_1.toLocaleString('en-IN')}`;
-                if (planName.includes('2 Meals')) monthlyPrice = `₹${PLAN_PRICES.plan_2.toLocaleString('en-IN')}`;
-                if (planName.includes('3 Meals')) monthlyPrice = `₹${PLAN_PRICES.plan_3.toLocaleString('en-IN')}`;
-                
-                noteEl.innerHTML = `📍 <strong>Note:</strong> You are requesting to configure a custom monthly subscription program for the <strong>${planName}</strong> plan (${monthlyPrice}/month). Meals are delivered daily. <em>Free delivery within 4km (charges may apply post 4km).</em>`;
-                btnTextEl.textContent = `Subscribe to ${planName}`;
+                noteEl.innerHTML = `You are inquiring about the <strong>${planName}</strong> plan (${price}/month). This form sets up an order slip sent to Anu's WhatsApp chat to customize details easily.`;
             }
             
-            // Show modal
             const modal = document.getElementById('subscription-modal');
             modal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // Disable background scrolling
+            document.body.classList.add('overflow-hidden');
         }
 
         function closePlanModal() {
             const modal = document.getElementById('subscription-modal');
             modal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // Re-enable background scrolling
+            document.body.classList.remove('overflow-hidden');
         }
 
-        // --- Call Back Modal Control Functions ---
         function openCallBackModal() {
             document.getElementById('callback-validation-warning').classList.add('hidden');
             const modal = document.getElementById('callback-modal');
@@ -1312,24 +1181,16 @@
                 return;
             }
 
-            document.getElementById('callback-validation-warning').classList.add('hidden');
-
             const messageText = `📞 *Anu's Paw Kitchen - Call Back Request* 📞\n\n` +
-                                `Hello Anu! I'm interested in fresh dog meal plans. Please call me back with the details:\n\n` +
+                                `Hello Anu! I'm interested in daily fresh dog meal plans in Mysore. Please call me back with the details:\n\n` +
                                 `• *Parent Name:* ${parentName}\n` +
-                                `• *Call Back Phone Number:* ${parentPhone}\n\n` +
+                                `• *Call Back Phone:* ${parentPhone}\n\n` +
                                 `Thank you! Looking forward to talking soon.`;
 
             const targetPhone = '919880134847';
-            const encodedText = encodeURIComponent(messageText);
-            const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedText}`;
-
-            closeCallBackModal();
-            // Redirect using location.href to bypass browser iframe pop-up blocks
-            window.location.href = whatsappUrl;
+            window.location.href = `https://wa.me/${targetPhone}?text=${encodeURIComponent(messageText)}`;
         }
 
-        // Submit form details and trigger custom preformatted WhatsApp message
         function handleFormSubmit(event) {
             event.preventDefault();
 
@@ -1338,59 +1199,35 @@
             const dBreed = document.getElementById('dog-breed').value.trim();
             const dWeight = document.getElementById('dog-weight-field').value.trim();
             const dActivity = document.getElementById('dog-activity-field').value;
-            const dAllergies = document.getElementById('dog-allergies').value.trim() || 'None reported';
+            const dAllergies = document.getElementById('dog-allergies').value.trim() || 'None';
 
             if (!pName || !dName || !dBreed || !dWeight) {
                 document.getElementById('modal-validation-warning').classList.remove('hidden');
                 return;
             }
 
-            // Clean validation hide
-            document.getElementById('modal-validation-warning').classList.add('hidden');
-
-            // Format dynamic pricing info in the WhatsApp message text
-            let pricingTextLine = '';
-            if (currentSelectedPlan.includes('1 Meal')) pricingTextLine = ` (Special Price: ₹${PLAN_PRICES.plan_1}/month, Original was: ₹${PLAN_PRICES.orig_1})`;
-            if (currentSelectedPlan.includes('2 Meals')) pricingTextLine = ` (Special Price: ₹${PLAN_PRICES.plan_2}/month, Original was: ₹${PLAN_PRICES.orig_2})`;
-            if (currentSelectedPlan.includes('3 Meals')) pricingTextLine = ` (Special Price: ₹${PLAN_PRICES.plan_3}/month, Original was: ₹${PLAN_PRICES.orig_3})`;
-
-            // Format a pristine, highly structured order slip for WhatsApp
-            const isCounseling = currentSelectedPlan.includes('Counseling') || currentSelectedPlan.includes('Choose') || currentSelectedPlan.includes('Helper');
-            const messageTypeHeader = isCounseling ? 'Monthly Plan Advice Request' : 'Monthly Subscription Request';
-
-            const messageText = `🐾 *Anu's Paw Kitchen - ${messageTypeHeader}* 🐾\n` +
-                                `⚠️ (This is a monthly health setup, not a one-time order)\n\n` +
-                                `📋 *Selected Plan Option:* ${currentSelectedPlan}${pricingTextLine}\n\n` +
+            const messageText = `🐾 *Anu's Paw Kitchen - Subscription Inquiry* 🐾\n\n` +
+                                `📋 *Selected Option:* ${currentSelectedPlan}\n\n` +
                                 `👨‍👩‍👧 *PARENT DETAILS:*\n` +
                                 `• *Name:* ${pName}\n\n` +
                                 `🐶 *DOG DETAILS:*\n` +
                                 `• *Name:* ${dName}\n` +
                                 `• *Breed/Age:* ${dBreed}\n` +
                                 `• *Weight:* ${dWeight} kg\n` +
-                                `• *Activity:* ${dActivity}\n` +
+                                `• *Activity Level:* ${dActivity}\n` +
                                 `• *Allergies/Notes:* ${dAllergies}\n\n` +
-                                `✨ Please review my details and help me get set up!`;
+                                `✨ Please review my details and help me get set up with trial meals!`;
 
-            // WhatsApp link redirection
             const targetPhone = '919880134847';
-            const encodedText = encodeURIComponent(messageText);
-            const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedText}`;
-
-            closePlanModal();
-            // Redirect using location.href to bypass browser iframe pop-up blocks
-            window.location.href = whatsappUrl;
+            window.location.href = `https://wa.me/${targetPhone}?text=${encodeURIComponent(messageText)}`;
         }
 
-        // Close modal when user clicks outside the modal content containers
+        // Close modal when clicking outside
         window.addEventListener('click', (e) => {
             const subscriptionModal = document.getElementById('subscription-modal');
             const callbackModal = document.getElementById('callback-modal');
-            if (e.target === subscriptionModal) {
-                closePlanModal();
-            }
-            if (e.target === callbackModal) {
-                closeCallBackModal();
-            }
+            if (e.target === subscriptionModal) closePlanModal();
+            if (e.target === callbackModal) closeCallBackModal();
         });
     </script>
 </body>
